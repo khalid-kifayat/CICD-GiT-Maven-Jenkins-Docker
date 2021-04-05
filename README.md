@@ -37,7 +37,7 @@ Manage Jenkins --> Configure system -->  Publish over SSH --> add Docker server 
 6. Create Jenkins job 
 
 A) Source Code Management  
- Repository : https://github.com/ValaxyTech/hello-world.git  
+ Repository : https://github.com/khalid-kifayat/maven-cicd.git 
  Branches to build : */master  
 
 B) Build
