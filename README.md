@@ -22,10 +22,10 @@ mkdir /opt/docker
 
 ### vi Dockerfile
 # Pull base image 
-From tomcat:8-jre8 
+From tomcat:9-jre9 
 
 # Maintainer
-MAINTAINER "valaxytech" 
+MAINTAINER "DEVOPS with KK" 
 
 # copy war file on to container 
 COPY ./webapp.war /usr/local/tomcat/webapps
@@ -51,22 +51,22 @@ C) send files or execute commands over SSH
  Remote directory	: `//opt//docker`  
  Exec command[s]	: 
   ```sh
-  docker stop valaxy_demo;
-  docker rm -f valaxy_demo;
-  docker image rm -f valaxy_demo;
+  docker stop docker_demo;
+  docker rm -f docker_demo;
+  docker image rm -f docker_demo;
   cd /opt/docker;
-  docker build -t valaxy_demo .
+  docker build -t docker_demo .
   ```
 
 D) send files or execute commands over SSH  
   Name: `docker_host`  
-  Exec command	: `docker run -d --name valaxy_demo -p 8090:8080 valaxy_demo`  
+  Exec command	: `docker run -d --name docker_demo -p 8090:8080 docker_demo`  
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
 8. Execute Jenkins job
 
-9. check images and containers again on Docker host. This time an image and container get creates through Jenkins job
+9. check images and containers again on Docker host on AWS EC2. This time an image and container get creates through Jenkins job
 
 10. Access web application from browser which is running on container
 ```
