@@ -1,5 +1,9 @@
 # docker-deploy-cicd
 
+
+![image](https://user-images.githubusercontent.com/78950897/113699704-5d347080-96ef-11eb-9fb9-91f2a13089e6.png)
+
+
 1. Launch an EC2 instance for Docker host
 
 2. Install docker on EC2 instance and start services 
