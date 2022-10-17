@@ -45,6 +45,15 @@
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
+      <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-surefire-plugins</artifactId>
+               <configuration>
+                        <forkcount>3</forkcount>
+                        <reuseforks>true</reuseforks>
+                        <argline>-Xmx1024m-XXMaxPremSize=256</argline>
+               </configuration>
+             </plugin>
 
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
