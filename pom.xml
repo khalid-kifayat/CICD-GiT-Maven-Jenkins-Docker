@@ -38,6 +38,10 @@
           <target>1.6</target>
         </configuration>
       </plugin>
+ <properties>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+ </properties>
 
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
